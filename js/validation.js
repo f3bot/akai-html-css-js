@@ -70,4 +70,4 @@ function addEven(array) {
 }
 
 console.log("2.", addEven(tab));
-*\
+*/
