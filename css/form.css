@@ -1,0 +1,146 @@
+/*
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AKAI Frontend Task - CSS
+
+    Spróbuj zmodyfikować poniższy plik ze stylami tak, by upiększyć formularz na stronie.
+    Jako inspiracji możesz skorzystać z szablonu znajdującego się w pliku img/layout.png
+    Nie wymagamy, by wykonać identyczny layout. Liczy się kreatywność.
+
+    Przy wykonywaniu zadania można zmienić strukturę pliku index.html.
+    Pamiętaj, że w takim wypadku będzie trzeba zadbać o dostosowanie odpowiednich selektorów.
+
+    Jeśli korzystasz z preprocessorów takich jak Sass/Less, również możesz się tym pochwalić.
+
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+body,html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: rgb(164,180,199);
+  background: linear-gradient(96deg, rgba(164,180,199,1) 0%, rgba(131,160,213,1) 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#task-frontend {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-radius: 8%;
+  height: 50%;
+  width: 25%;
+	max-width: 1200px;
+  margin: 0 auto;
+	text-align: center;
+  background: rgb(220,223,230);
+  background: linear-gradient(96deg, rgba(220,223,230,1) 0%, rgba(171,176,186,1) 100%);
+  color: rgba(7, 7, 7, 0.7);
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+
+#task-frontend input[type="text"], #task-frontend input[type="email"] {
+  overflow: hidden;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid white;
+  width: 250px;
+  height: 30px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 0px 35px -2px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 35px -2px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 35px -2px rgba(66, 68, 90, 1);
+  opacity: 0.5;
+}
+
+#task-frontend h3{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.basic-title{
+  font-size: 36px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 2% 0 2% 0;
+}
+
+#task-frontend span {
+  display: block;
+}
+
+.submit-section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#task-frontend input[type="checkbox"] {
+  color: black;
+  background-color: black;
+  height: 20px;
+  width: 25px;
+}
+
+#task-frontend input[type="checkbox"]:onclick{
+  color: black;
+}
+
+#task-frontend input[type="submit"] {
+  margin: 4% 0 0 0;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+}
+
+#task-frontend input[type="submit"]:hover{
+  font-size: 24px;
+  background-color: rgb(213, 213, 221);
+  transition: ease-in-out 0.8s;
+  transform: scale(1.1);
+}
+
+#task-frontend input[type="submit"]:not(:hover){
+  background-color: white;
+  transition: ease-in-out .8s;
+}
+
+#task-frontend label{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sub-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5% 0 5% 0;
+}
+
+.error{
+  font-size: 12px;
+}
+
+.checkdiv{
+  margin-top: 2%;
+  font-size: 12px;
+}
+
+/*
+  tutaj kiedys bedzie media query i responsywnosc
+*/

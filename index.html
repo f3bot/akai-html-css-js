@@ -1,0 +1,93 @@
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AKAI Frontend Task - HTML
+
+	W tym pliku znajduje się struktura strony z formularzem. Twoim zadaniem jest upiększenie
+	tego formularza. Przeanalizuj poniższy kod. Jego znajomość będzie potrzebna do przerobienia
+	pliku form.css odpowiedzialnego za styl strony. Gdy zapoznasz się ze strukturą strony,
+	przejdź do pliku css/form.css lub js/validation.js po dalsze instrukcje.
+
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+    <!--
+        ...
+        ...
+        ...
+    -->
+
+	<!-- początek formularza -->
+	<div class="main">
+	<!-- element section ma ID "task-frontend". Może to się nam przydać m.in. podczas stylowania dokumentu -->
+	<section id="task-frontend">
+
+		<span class="basic-title">Join us!</span>
+
+		<hr class="form-line"></hr>
+
+		<form id="form" method="GET" action="/">
+
+			<!-- od użytkownika pobieramy imię, nazwisko, email oraz informację, do jakiej sekcji chce dołączyć -->
+			<div class="section-1">
+				<div class="error" id="error"></div>
+		    	<input type="text" class="input" id="first-name" name="first-name" placeholder="First Name"/>
+		    	<input type="text" class="input" id="last-name" name="last-name" placeholder="Last Name"/>
+		    	<input type="email" class="input" id="email" name="email" placeholder="Email Adress"/>
+			</div>
+			<h3>Pick your field of work.</h3>
+			<div class="submit-section">
+				<div class="sub-section">
+					<div class="sub-container">
+						<input type="checkbox" class="checkbox" id="frontend-checkbox" name="section" value="frontend" checked>
+						<label for="frontend-checkbox">Frontend</label>
+					</div>
+					<div class="sub-container">
+						<input type="checkbox" class="checkbox" id="backend-checkbox" name="section" value="backend">
+						<label for="backend-checkbox">Backend</label>
+					</div>
+				</div>
+				<div class="sub-section">
+					<div class="sub-container">
+						<input type="checkbox" class="checkbox" id="mobile-checkbox" name="section" value="mobile">
+						<label for="mobile-checkbox">Mobile</label>
+					</div>
+					<div class="sub-container">
+						<input type="checkbox" class="checkbox" id="graphics-checkbox" name="section" value="graphics">
+						<label for="graphics-checkbox">Graphics</label>
+					</div>
+				</div>
+			</div>
+			<div class="checkdiv" id="checkdiv"></div>
+            <input type="submit" value="Submit" id="submit">
+		</form>
+
+		<hr class="form-line"></hr>
+
+	</section>
+	</div>
+	<!-- koniec formularza -->
+
+    <!--
+        ...
+        ...
+        ...
+    -->
+
+
+<!-- zaimportowanie pliku z kodem javascript, który dokona walidacji danych (zadanie JS) -->
+<script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+</html>
