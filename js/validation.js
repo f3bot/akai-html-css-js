@@ -47,6 +47,7 @@ form.addEventListener('submit', (e) =>{
 
 // 1. odwróć liczbę
 // np dla 12345, funkcja powinna zwrócić 54321
+/*
 function reverseNumber(number) {
   let x = number.toString().split("");
   let xreversed = x.reverse().join("")
@@ -69,3 +70,4 @@ function addEven(array) {
 }
 
 console.log("2.", addEven(tab));
+*\
